@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  esempio-dock-2:
+    image: immaginerelativa:1
+    ports:
+      - "3000:3000"
+    command: ["node", "app.js"]
+    volumes:
+      - ./config.json:/app/config.json:ro
